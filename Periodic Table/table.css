@@ -1,0 +1,464 @@
+body
+{
+  background-color: #036;
+  margin: 0px;
+  padding: 0px;
+  font-family:Noto Sans CJK,Source Han Sans,Microsoft JhengHei,DFKai-sb,PMingLiU;
+}
+div
+{
+  margin: 0 auto;
+}
+#TITLE
+{
+ width:100%;
+ height:120px;
+ text-align:center;
+ vertical-align:middle;
+ background:#903;
+ font-family:Noto Sans CJK,Source Han Sans,Microsoft JhengHei,DFKai-sb,PMingLiU;
+}
+#BOARD
+{
+  width:100%;
+  overflow:auto;
+  font-family:Noto Sans CJK,Source Han Sans,Microsoft JhengHei,DFKai-sb,PMingLiU;
+}
+#SIZECTRL
+{
+    background-color: #036;
+    padding-left: 30px;
+    width: 1080px;
+}
+#titletxt
+{
+  font-size:50px;
+  line-height:80px;
+  color:#ffffff;
+  overflow:hidden;
+}
+#engtitle
+{
+  font-size:30px;
+  line-height:30px;
+  color:#ffffff;
+}
+#ps
+{
+  width:100%;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  vertical-align:middle;
+  font-family:Noto Sans CJK,Source Han Sans,Microsoft JhengHei,DFKai-sb,PMingLiU;
+}
+#pstext
+{
+  font-size:20px;
+  line-height:30px;
+  color:#ffffff;
+}
+.atom
+{
+    height:70px;
+    width:auto;
+    overflow: hidden;
+    transition:transform 400ms ease-in-out;
+}
+.atom:hover
+{
+    transform: scale(1.5);
+}
+.NULL
+{
+    height:70px;
+}
+img
+{
+  margin:0px auto;
+  width:54px;
+  height:64px;
+  border: 3px solid;
+  border-color: #036;
+}
+#preinfo
+{
+  width:550px;
+  height:200px;
+  border: 0px;
+}
+#UP
+{
+    height:490px;
+    width:100%;
+}
+#DOWN
+{
+    height:140px;
+    width:100%;
+}
+#spaceup
+{
+  width:1140px;
+  margin: 0px auto;
+  height: 40px;
+}
+#A1
+{
+    height:490px;
+    width:11.11111111111111111%;
+    float:left;
+}
+#IA
+{
+    height:490px;
+    width:50%;
+    float:left;
+}
+#IIA
+{
+    height:490px;
+    width:50%;
+    float:left;
+}
+#middleblock
+{
+    float:left;
+    width:55.55555555555555555%;
+}
+#Preview
+{
+    height:210px;
+}
+#BGROUP
+{
+  height:280px;
+}
+#B1
+{
+  float:left;
+  width:10%;
+}
+#B2
+{
+  float:left;
+  width:10%;
+}
+#B3
+{
+  float:left;
+  width:10%;
+}
+#B4
+{
+  float:left;
+  width:10%;
+}
+#B5
+{
+  float:left;
+  width:10%;
+}
+#B6
+{
+  float:left;
+  width:10%;
+}
+#B7
+{
+  float:left;
+  width:10%;
+}
+#B8
+{
+  float:left;
+  width:10%;
+}
+#B9
+{
+  float:left;
+  width:10%;
+}
+#B10
+{
+  float:left;
+  width:10%;
+}
+#A2
+{
+  height:490px;
+  width:33.3333333333333333333%;
+  float:left;
+}
+#IIIA
+{
+    height:490px;
+    width:16.66666666666666666%;
+    float:left;
+}
+#IVA
+{
+    height:490px;
+    width:16.66666666666666666%;
+    float:left;
+}
+#VA
+{
+    height:490px;
+    width:16.66666666666666666%;
+    float:left;
+}
+#VIA
+{
+    height:490px;
+    width:16.66666666666666666%;
+    float:left;
+}
+#VIIA
+{
+    height:490px;
+    width:16.66666666666666666%;
+    float:left;
+}
+#VIIIA
+{
+    height:490px;
+    width:16.66666666666666666%;
+    float:left;
+}
+.BLANK
+{
+  width:100px;
+  clear:both;
+  height:20px;
+}
+#LAetc
+{
+  height:70px;
+  width:100%;
+}
+#LAblank
+{
+  height:70px;
+  width:11.1111111111111111111%;
+  float:left;
+}
+#LAmiddle
+{
+  height:70px;
+  width:83.33333333333333333333%;
+  float:left;
+}
+#LAtag
+{
+  width:6.666666666666666666666666666666666%;
+  height:70px;
+  font-size:20px;
+  line-height:60px;
+  color:white;
+  text-align:center;
+  float:left;
+}
+#Ce
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Pr
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Nd
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Pm
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Sm
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Eu
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Gd
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Tb
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Dy
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Ho
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Er
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Tm
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Yb
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Lu
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#ACetc
+{
+  height:70px;
+  width:100%;
+}
+#ACblank
+{
+  height:70px;
+  width:11.1111111111111111111%;
+  float:left;
+}
+#ACmiddle
+{
+  height:70px;
+  width:83.33333333333333333333%;
+  float:left;
+}
+#ACtag
+{
+  width:6.666666666666666666666666666666666%;
+  height:70px;
+  font-size:20px;
+  line-height:60px;
+  color:white;
+  text-align:center;
+  float:left;
+}
+#temp1
+{
+  background:#004D26;
+  height:64px;
+  width:54px;
+  border: 3px solid;
+  border-color: #036;
+}
+#temp2
+{
+  background:#606;
+  height:64px;
+  width:54px;
+  border: 3px solid;
+  border-color: #036;
+}
+#Th
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Pa
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#U
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Np
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Pu
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Am
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Cm
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Bk
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Cf
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Es
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Fm
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Md
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#No
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#Lr
+{
+  width:6.666666666666666666666666666666666%;
+  float:left;
+}
+#spacedown
+{
+  width:100%;
+  height: 40px;
+}
+#end
+{
+  clear:left;
+  width:100%;
+  height:120px;
+  text-align:center;
+  color:#ffffff;
+  background-color: #903;
+  font-family:Microsoft JhengHei;
+}
+#last
+{
+  width: 100%;
+  position: absolute;
+}

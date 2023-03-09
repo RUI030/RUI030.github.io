@@ -1,0 +1,202 @@
+body
+{
+  width:100%;
+  height:700px;
+  margin: 0px;
+  background-color:#444;
+  background-repeat:no-repeat;
+  position:relative;
+  overflow:scroll;
+  font-family:Noto Sans CJK,Source Han Sans,Microsoft JhengHei,DFKai-sb,PMingLiU;
+}
+#bg
+{
+  background:rgba(a,a,a,0.9);
+  width:100%;
+  height:800px;
+  position:absolute;
+}
+a
+{
+  font-family: "Microsoft JhengHei";
+  color:white;
+  font-size: 24px;
+  line-height: 40px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.upsmall
+{
+  vertical-align:super;
+  font-size: 12px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+sup
+{
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color:white;
+  font-size:15px;
+  font-family: "Microsoft JhengHei";
+}
+sub
+{
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color:white;
+  font-size:15px;
+  font-family: "Microsoft JhengHei";
+}
+.SUPT
+{
+  font-size: 12px;
+  font-family: "Microsoft JhengHei";
+}
+#BOARD
+{
+  width:900px;
+  height: 600px;
+  padding-top: 80px;
+  margin: 0px auto;
+  padding-left:270px;
+  padding-right:270px;
+  position:auto;
+}
+#LEFT
+{
+  width:200px ;
+  height: inherit;
+  background-color:#036 ;
+  float: left;
+}
+#LUP
+{
+  margin: auto;
+  width: inherit;
+  height: 250px;
+}
+#ATOM
+{
+  width: 160px;
+  height: 210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.info
+{
+  font-size: 18px;
+  color: white;
+}
+#LDN
+{
+  height: 350px;
+  width: inherit;
+}
+#PSTCTRL
+{
+  font-size: 24px;
+  color: white;
+  padding: 30px;
+  line-height:40px;
+}
+#NUM
+{
+  font-size: 30px;
+  color: yellow;
+}
+#ENNAME
+{
+  font-size: 20px;
+}
+#AVGMASS
+{
+  font-size: 20px;
+  text-align: center;
+}
+#RIGHT
+{
+  width:700px ;
+  height:inherit;
+  background-color:#EA3 ;
+  float: left;
+}
+#closetab
+{
+  height:35px;
+  width: 40px;
+  margin-left:660px;
+  margin-top:8px;
+}
+#RUP
+{
+  height: 40px;
+  width: inherit;
+}
+#RMID
+{
+  height: 360px;
+  line-height: 40px;
+  font-size: 30px;
+  width: inherit;
+}
+#RMID a
+{
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.ELE
+{
+  font-size: 22px;
+}
+#RML
+{
+  margin-left: 30px;
+  height: 350px;
+  width: 250px;
+  float: left;
+  overflow: hidden;
+}
+#RMR
+{
+  height: 350px;
+  width: 380px;
+  float: left;
+}
+#RDN
+{
+  height: 180px;
+  width: 700px;
+}
+#PSBOARD
+{
+  margin: 20px;
+  height:160px;
+  width: 660px;
+  background-color: #DA7;
+}
+#PSSPACE
+{
+  width: 10px;
+  height: 140px;
+  float: left;
+}
+#PSTCTRL
+{
+  padding-left: : 10px;
+  width: 250px;
+  height: 250px;
+  background-color: #414;
+  float: left;
+}
+#PSTXT
+{
+  font-size: 23px;
+  line-height: 40px;
+  text-indent: 5px;
+  color: white;
+}
+#PS
+{
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
