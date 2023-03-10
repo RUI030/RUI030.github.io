@@ -38,7 +38,7 @@
 	tfoot, thead, tr, th, td, article, aside,
 	canvas, details, embed, figure, figcaption,
 	footer, header, hgroup, menu, nav, output, ruby,
-	section, summary, time, mark, audio, video {
+	section, summary, time, mark, audio, video, iframe {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -608,7 +608,7 @@
 		position: relative;
 
 		&[data-position] {
-			img {
+			img, iframe {
 				@include vendor('object-fit', 'cover');
 				display: block;
 				position: absolute;
@@ -620,84 +620,84 @@
 		}
 
 		&[data-position="top left"] {
-			img {
+			img, iframe {
 				@include vendor('object-position', 'top left');
 			}
 		}
 
 		&[data-position="top"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'top');
 			}
 		}
 
 		&[data-position="top right"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'top right');
 			}
 		}
 
 		&[data-position="right"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'right');
 			}
 		}
 
 		&[data-position="bottom right"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'bottom right');
 			}
 		}
 
 		&[data-position="bottom"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'bottom');
 			}
 		}
 
 		&[data-position="bottom left"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'bottom left');
 			}
 		}
 
 		&[data-position="left"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'left');
 			}
 		}
 
 		&[data-position="center"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', 'center');
 			}
 		}
 
 		&[data-position="25% 25%"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', '25% 25%');
 			}
 		}
 
 		&[data-position="75% 25%"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', '75% 25%');
 			}
 		}
 
 		&[data-position="75% 75%"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', '75% 75%');
 			}
 		}
 
 		&[data-position="25% 75%"] {
-			img {
+			img , iframe{
 				@include vendor('object-position', '25% 75%');
 			}
 		}
 
-		img {
+		img , iframe{
 			border-radius: _size(border-radius);
 			display: block;
 		}
@@ -719,7 +719,7 @@
 			margin: 0 0 _size(element-margin) 0;
 			width: 100%;
 
-			img {
+			img , iframe{
 				display: block;
 				width: 100%;
 			}
@@ -729,7 +729,7 @@
 			border-radius: 100%;
 			overflow: hidden;
 
-			img {
+			img , iframe{
 				border-radius: 100%;
 				display: block;
 				width: 100%;
@@ -741,7 +741,7 @@
 			height: 20em;
 			border-radius: 0;
 
-			img {
+			img , iframe{
 				border-radius: 0;
 			}
 		}
@@ -1128,7 +1128,7 @@
 				vertical-align: middle;
 				width: 48%;
 
-				img {
+				img , iframe{
 					display: block;
 					width: 100%;
 				}
@@ -1433,7 +1433,7 @@
 				&.right {
 					max-width: 40%;
 
-					img {
+					img , iframe{
 						width: 100%;
 					}
 				}
