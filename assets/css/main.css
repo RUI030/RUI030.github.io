@@ -2912,6 +2912,12 @@ iframe{
 					 /* #b7eadc; */
 				}
 
+				#header > footer .icons li a:hover {
+					color: rgba(255, 255, 255, 0.9);
+					background-color: rgba(255,255, 255, 0);
+					 /* #b7eadc; */
+				}
+
 		#header > nav {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
