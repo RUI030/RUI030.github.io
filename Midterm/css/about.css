@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import "style.css";
+
+#about #L img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posrel
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+}
+
+.posrel:hover
+{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+#about #R article
+{
+    color:rgba(200, 200, 200, 1);
+    width: 50%;
+    max-width: 90%;
+    height: auto;
+    max-height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#about #R article::-webkit-scrollbar 
+{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#about #R article
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#about #R article h1
+{
+    width: 100%;
+    color:rgba(210, 195, 150, 1);
+    margin: auto;
+}
+
+#about #R article h4
+{
+    width: 100%;
+    color:rgba(155,140,95,1);
+    margin: 5px auto;
+    font-family: 'saira';
+    font-weight: 300;
+}
+
+#about #R article p
+{
+    width: 100%;
+    padding-top: 5%;
+    text-align: justify;
+    font-family: 'saira';
+    line-height: 1.8em;
+    margin: auto;
+}
+
+#about #R article .btn
+{
+    width: 30%;
+    min-width: 120px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 15px;
+    margin: 40px auto;
+    font-weight: 500;
+    font-size: larger;
+    color: rgba(20,50,75,1);
+    background: rgba(155,140,95,1);
+    border-radius: 6px;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+}
+
+#about #R article .btn:hover
+{
+    background: rgba(210, 195, 150, 1);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+
+
+#about .half:hover article
+{
+	transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+i
+{
+    font-size: xx-large;
+}
+
+.urlicon
+{
+    width: 80%;
+    margin: auto;
+}
+
+.urlicon header
+{
+    padding: 0;
+}
+
+.urlicon article
+{
+    width: 100px;
+    min-width: auto;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    overflow: hidden;
+}
+
+.urlicon article:hover
+{
+    color: rgba(210, 195, 150, 1);
+    transform: scale(1.2);
+}
+
+.urlicon i
+{
+    font-size: 80px;
+    line-height: 1.2em;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.urlicon h5
+{
+    margin: 10px auto;
+    font-family: 'saira';
+    font-weight: 400;
+}
+

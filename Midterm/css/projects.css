@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "style.css";
+
+section.projects
+{
+    width: 90%;
+}
+
+.projects article
+{
+    display: inline-block;
+    vertical-align:top;
+
+    border-radius: 10px;
+    width: 330px;
+	/* padding: 15px 40px 20px 40px; */
+    margin: 35px 25px;
+    background:rgba(20,50,75,1);
+    color: rgba(168,168,168,1);
+    border: solid 2px;
+    border-color:rgba(200,200,200,.3);
+    transition:transform 400ms ease-in-out;
+    -webkit-transition:transform 400ms ease-in-out;
+    z-index: 1000;
+}
+
+
+.projects article:hover
+{
+    border: solid 2px;
+    border-color:rgba(210,195,150,.7);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+
+}
+
+.projects a
+{
+    width: auto;
+    height: auto;
+}
