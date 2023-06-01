@@ -1,749 +1,209 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>RUIs Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="zh-TW">
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">I'm&nbsp;RÜI</a></h1>
-					<p>L!f3 !s FULL of BUGs &nbsp;:P<br/>
-					SO K33P DEBUGGING.</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#About" class="active nvbar">About</a></li>
-						<li><a href="#Skills" class="active nvbar">Skill</a></li>
-						<li><a href="#Projects" class="active nvbar">Project</a></li>
-						<li><a href="#Portfolio" class="active nvbar">Portfolio</a></li>
-						<li><a href="#Contact" class="active nvbar">Contact</a></li>
-						<!-- <li><a href="#four">Contact</a></li> -->
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-						<li><a href="https://github.com/RUI030" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-						<li><a href="mailto:imrui.ee09@nycu.edu.tw" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-						<li><a href="https://www.youtube.com/@rui030" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
-					</ul>
-				</footer>
-			</section>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUI's Website</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Saira+Semi+Condensed:wght@100;200;300;400;500&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <!-- js -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body>
+    <!-- 選單 -->
+    <nav>
+        <div class="rel center">
+            <article class="go-home">
+                <span class="material-symbols-outlined">home</span>
+                <p>Home</p>
+            </article>
+            <article class="to-pages">
+                <span class="material-symbols-outlined">explore</span>
+                <p>Pages</p>
+            </article>
+            <article class="go-projects sun">
+                <img src="img/top/sun.svg" />
+                <p>Projects</p>
+            </article>
+            <article class="go-portfolio moon">
+                <img src="img/top/moon2.svg" />
+                <p>Portfolio</p>
+            </article>
+            <article class="to-about">
+                <span class="material-symbols-outlined">info</span>
+                <p>About</p>
+            </article>
+            <article class="to-links">
+                <span class="material-symbols-outlined">link</span>
+                <p>Links</p>
+            </article>
+        </div>
+        <span class="material-symbols-outlined close-nav close-nav-btn">
+            close
+        </span>
+    </nav>
+    <!-- 右下功能 -->
+    <aside>
+        <ul>
+            <!-- <li class="prev-sec">
+                <span class="material-symbols-outlined">
+                    expand_less
+                </span>
+            </li>
+            <li class="next-sec">
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </li> -->
+            <li class="to-top">
+                <span class="material-symbols-outlined">
+                    vertical_align_top
+                </span>
+            </li>
+            <li class="to-about">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+            </li>
+            <li class="to-pages">
+                <span class="material-symbols-outlined">
+                    explore
+                </span>
+            </li>
+            <li class="to-links">
+                <span class="material-symbols-outlined">
+                    link
+                </span>
+            </li>
+            <li class="open-nav" id="main-btn">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </li>
+        </ul>
+    </aside>
+    <!-- 主要頁面內容 -->
+    <main>
+        <!-- 頁首 -->
+        <header id="top" class="to-next">
+            <div class="full">
+                <div id="top-container">
+                    <div class="col">
+                        <img class="avatar" src="img/top/head.png" alt="avatar" />
+                        <h2>I'm RUI</h2>
+                        <p>a creative engineer</p>
+                    </div>
+                </div>
+                <!-- <div id="down-arrow">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div> -->
+            </div>
+        </header>
+        <!-- About -->
+        <section id="about">
+            <div class="rwd-flex">
+                <div class="box">
+                    <img src="img/about/about.jpg" alt="me" />
+                </div>
+                <div class="box">
+                    <article>
+                        <h1>Hi, I'm RÜI.</h1>
+                        <h4>JI3G4W96J0 BP6</h4>
+                        <p>
+                            A student pursuing bachelor's degree in the Department of Electronics and Electrical
+                            Engineering, National Yang Ming Chiao Tung University, Taiwan. Highly interested in coding,
+                            circuit design, AI-related topics, and graphic design. Being open-minded, eager to learn new
+                            things, responsible for assigned jobs, and likes to share experiences with others.
+                        </p>
+                        <a href="https://drive.google.com/drive/u/1/folders/1gYylMsKwdQxlb2c3XElvePXauSSGBe1-"
+                            target="_blank">
+                            <div class="btn">
+                                <p>
+                                    <i class="material-icons">contact_page</i>
+                                    Resume
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- 日月傳送門 -->
+        <section id="pages">
+            <div class="full">
+                <div class="rwd-flex">
+                    <div class="box">
+                        <div class="container">
+                            <article class="go-projects sun">
+                                <img src="img/top/sun.svg" /><br />
+                                <h2>Projects</h2>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="container">
+                            <article id="moon" class="go-portfolio moon">
+                                <img src="img/top/moon.svg" /><br />
+                                <h2>Portfolio</h2>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 外部連結 -->
+        <section id="links">
+            <div class="full">
+                <section class="urlicon">
+                    <h1>
+                        Link
+                    </h1>
+                    <a href="https://drive.google.com/drive/u/1/folders/1gYylMsKwdQxlb2c3XElvePXauSSGBe1-"
+                        target="_blank">
+                        <article>
+                            <i class="material-icons">contact_page</i>
+                            <p>Resume</p>
+                        </article>
+                    </a>
+                    <a href="mailto:imrui.ee09@nycu.edu.tw" target="_blank">
+                        <article>
+                            <i class="material-icons">mail_outline</i>
+                            <p>Email</p>
+                        </article>
+                    </a>
+                    <a href="https://github.com/RUI030/" target="_blank">
+                        <article>
+                            <i class="fa fa-solid fa-github"></i>
+                            <p>Github</p>
+                        </article>
+                    </a>
+                </section>
+            </div>
+        </section>
+        <!-- 頁尾 -->
+        <footer>
+            <div class="full">
+                <h2>061 &copy; ALL Right Reserved.</h2>
+            </div>
+        </footer>
+    </main>
+</body>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- About -->
-							<section id="About">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>About</h2>
-										<p>Hi,&nbsp;I'm&nbsp;RÜI.&nbsp;&nbsp;･*･:≡(&nbsp;&nbsp;&nbsp;&nbsp;ε:)&nbsp;&nbsp;JI3G4W96J0&nbsp;BP6&nbsp;</p>
-									</header>
-									<p>A student pursuing bachelor's degree in the Department of Electronics and Electrical Engineering, National Yang Ming Chiao Tung University, Taiwan. Highly interested in coding, circuit design, AI-related topics, and graphic design. Being open-minded, eager to learn new things, responsible for assigned jobs, and likes to share experiences with others.</br>
-									<!-- <button>Download CV</button> -->
-									<ul class="actions">
-										<li><a href="https://drive.google.com/drive/folders/1gYylMsKwdQxlb2c3XElvePXauSSGBe1-?usp=share_link" class="button primary">Resume</a></li>
-									</ul>
-								</div>
-							</section>
-						<!-- Skills -->
-							<section id="Skills">
-								<div class="container">
-									<header class="major">
-										<h2>Skill</h2>
-										
-									</header>
-									<p>
-										<h2>Programming</h2>
-										<!-- <h5>Default</h5> -->
-										<div class="table-wrapper">
-											<table>
-												<tbody>
-													<tr>
-														<td><b class="blue">Python</b></td>
-														<td>Anaconda,&nbsp;Jupyter&nbsp;Notebook,&nbsp;Colab</br>
-															NumPy,&nbsp;Matplotlib,&nbsp;AI-related...</td>
-														<!-- <td>29.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">C/C++</b></td>
-														<td>Visual Studio, MFC, UDP/TCP</td>
-														<!-- <td>19.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">Assembly</b></td>
-														<td>MIPS,&nbsp;8051</td>
-														<!-- <td>29.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">MCU</b></td>
-														<td>Arduino,&nbsp;8051</br>
-														Sensors,&nbsp;Interrupt,&nbsp;Serial Communication
-														</td>
-														<!-- <td>29.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">Web&nbsp;Design</b></td>
-														<td>Frontend:&nbsp;HTML,&nbsp;CSS</td>
-														<!-- <td>29.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">MathWorks</b></td>
-														<td>MATLAB,&nbsp;Simulink</td>
-														<!-- <td>19.99</td> -->
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</p>
-									<p>
-										<h2>Circuit Design</h2>
-										<!-- <h5>Default</h5> -->
-										<div class="table-wrapper">
-											<table>
-												<tbody>
-													<tr>
-														<td><b class="blue">Simulation</b></td>
-														<td>LTSPICE,&nbsp;Tinkercad</td>
-													</tr>
-													<tr>
-														<td><b class="blue">HDL</b></td>
-														<td>Verilog,&nbsp;ModelSim,&nbsp;iverilog</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</p>
-									<p>
-										<h2>Others</h2>
-										<!-- <h5>Default</h5> -->
-										<div class="table-wrapper">
-											<table>
-												<tbody>
-													<tr>
-														<td><b class="blue">MS Office</b></td>
-														<td>Word,&nbsp;Power&nbsp;Point,&nbsp;OneDrive</td>
-													</tr>
-													<tr>
-														<td><b class="blue">Adobe</b></td>
-														<td>Photoshop,&nbsp;Illustrator</td>
-													</tr>
-													<tr>
-														<td><b class="blue">CAD</b></td>
-														<td>Inkscape,&nbsp;Fusion360,&nbsp;Creo&nbsp;Parametric</td>
-													</tr>
-													<tr>
-														<td><b class="blue">Computer Animation</b></td>
-														<td>MikuMikuDance,&nbsp;Metasequoia</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</p>
-									<p>
-										<h2>Language</h2>
-										<!-- <h5>Default</h5> -->
-										<div class="table-wrapper">
-											<table>
-												<tbody>
-													<tr>
-														<td><b class="blue">Mandarin</b></td>
-														<td>Native</td>
-														<!-- <td>29.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">English</b></td>
-														<td>TOEIC 830</td>
-														<!-- <td>19.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">Taiwanese Hokkien</b></td>
-														<td>Native</td>
-														<!-- <td>29.99</td> -->
-													</tr>
-													<tr>
-														<td><b class="blue">Japanese</b></td>
-														<td>A little bit.&nbsp;(Still learning)</td>
-														<!-- <td>19.99</td> -->
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</p>
-									
-								</div>
-							</section>
-						
-						<!-- Projects -->
-						<section id="Projects">
-							<div class="container">
-								<header class="major">
-									<h2>Project</h2>
-									<p>Click the title of each project for more information.</p>
-								</header>
-								<p>
-									<h2 class="blue">Artificial Intelligence</h2>
-									<div class="features">
-										<article>
-											<a href="https://github.com/Terence1219/WeatherClassifierOnKV260" target="_blank" class="image"><img src="images/pjcover/rtweather.jpg" alt="Slide Cover" /></a>
-											<div class="inner">
-												<h4><a class="icon solid fa-cloud" href="https://github.com/Terence1219/WeatherClassifierOnKV260" target="_blank">&nbsp;&nbsp;Real-time Weather Classifier</a></h4>
-												<p>This is an AI SoC project built with <a href="https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html" target="_blank">Kria KV260</a>, <a href="https://github.com/Xilinx/PYNQ" target="_blank">PYNQ</a> ,and <a href="https://github.com/Xilinx/Vitis-AI" target="_blank">Vitis AI</a>. The pretrained <a href="https://pytorch.org/vision/stable/models/generated/torchvision.models.resnet18.html#torchvision.models.ResNet18_Weights" target="_blank">ResNet-18</a> weights was finetuned on <a href="https://www.cs.ccu.edu.tw/~wtchu/projects/Weather/index.html" target="_blank">Image2Weather</a> dataset with PyTorch and optimized by Xilinx Vitis AI tools. </p>
-											</div>
-										</article>
-									</div>
-								</p>
-								<p>
-									<h2 class="blue">Circuit Design</h2>
-									<div class="features">
-										<article>
-											<a class="image">
-												<div class="vdo">
-													<iframe src="https://www.youtube.com/embed/FC6G3vB60f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												</div>
-											</a>
-											<div class="inner">
-												<h4><a class="icon solid fa-microchip" href="https://github.com/RUI030/2021_Fall_ODE" target="_blank">&nbsp;&nbsp;A x D &lt;&gt; Clock &times; Metronome</a></h4>
-												<p>This is an electic metronome and clock signal generator that has a linear continuous frequency scaler. It's a combination of analog and digital circuit. We also simulate and analyze the circuit with LTSPICE and Python.</p>
-											</div>
-										</article>
-									</div>
-									<div class="features">
-										<article>
-											<a href="https://github.com/RUI030/MELab" target="_blank" class="image"><img src="images/pjcover/melab.jpg" alt="Slide Cover" /></a>
-											<div class="inner">
-												<h4><a class="icon solid fa-microchip" href="https://github.com/RUI030/MELab" target="_blank">&nbsp;&nbsp;ME Lab Materials</a></h4>
-												<p>Some materials of the Microelectronic Experiments.</p>
-											</div>
-										</article>
-									</div>
-								</p>
-								<p>
-									<h2 class="blue">Programming</h2>
-									<div class="features">
-										<article>
-											<a class="image">
-												<div class="vdo">
-													<iframe src="https://www.youtube.com/embed/3CsxLSuhLek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												</div>
-											</a>
-											<div class="inner">
-												<h4><a class="icon solid fa-code" href="https://github.com/RUI030/MFC-BINGO-Chatroom" target="_blank">&nbsp;&nbsp;BINGO! Chatroom</a></h4>
-												<p>(UNFINISHED) Simple chatroom TCP/IP server and client with a built-in BINGO. This project is develope in Visual Studio MFC.</p>
-											</div>
-										</article>
-									</div>
-								</p>
-								<p>
-									<h2 class="blue">KGHSI<sup>2</sup>TRC<sup>2</sup></h2>
-									<p>KGHSI<sup>2</sup>TRC<sup>2</sup> is the abbreviation of Kaohsiung Municipal Kaohsiung Girls' Senior High School Computer Information & Internet Technology Research Club. The following are the projects finished while I was in the club. After graduated from highschool, the club website was transfer and maintained by other club members.</p>
-								<!-- <ul> -->
-									<div class="features">
-										<article>
-											<a href="https://rui030.github.io/PeriodicTable/" target="_blank" class="image"><img src="images/pjcover/PeriodicTable.jpg" alt="Slide Cover" /></a>
-											<div class="inner">
-												<h4><a class="icon solid fa-code" href="https://rui030.github.io/PeriodicTable/" target="_blank">&nbsp;&nbsp; Periodic Table Website</a></h4>
-												<p>HTML+CSS, co-working with other club members.</p>
-											</div>
-										</article>
-										
-
-									</div>
-									<div class="features">
-										<article>
-											<a href="https://github.com/RUI030/OTHERS/blob/main/%E7%A4%BE%E5%88%8A.pdf" target="_blank" class="image"><img src="images/pjcover/digest.jpg" alt="Slide Cover" /></a>
-											<div class="inner">
-												<h4><a class="icon solid fa-book" href="https://github.com/RUI030/OTHERS/blob/main/%E7%A4%BE%E5%88%8A.pdf" target="_blank">&nbsp;&nbsp; KGHSI<sup>2</sup>TRC<sup>2</sup> Club Digest</a></h4>
-												<p>The annual digest recording the events and classes in the club. Typesetting with MS Office word.</p>
-											</div>
-										</article>
-										<p>
-											<h4><a class="icon solid fa-globe" href="https://kghsi2trc2.mystrikingly.com/" target="_blank">&nbsp;&nbsp; KGHSI<sup>2</sup>TRC<sup>2</sup> Club Website</a></h4>
-											<h4><a class="icon solid fa-sitemap" href="https://kghsclubsweb.mystrikingly.com/" target="_blank">&nbsp;&nbsp; School Club Website</a></h4>
-											
-										</p>
-									</div>
-									
-								<!-- </ul> -->
-								</p>
-							</div>
-						</section>
-
-						<!-- Art & Design Portfolio -->
-						<section id="Portfolio">
-							<div class="container">
-								<header class="major">
-									<h2>Portfolio</h2>
-
-								</header>
-								<p><a href="https://imrui.mystrikingly.com/" class="icon solid fa-code" target="_blank"><span class="label">Old Website</span>&nbsp;&nbsp;Old Website</a></p>
-								<h2 class="blue">Animation</h2>
-									<div class="features">
-										<article>
-											<a class="image">
-												<div class="vdo">
-													<iframe src="https://www.youtube.com/embed/7Ahg9-ujvDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												</div>
-											</a>
-											<div class="inner">
-												<h4><a class="icon solid fa-film" href="https://www.youtube.com/embed/7Ahg9-ujvDY" target="_blank">&nbsp;&nbsp;龘䶛䨻䎱</a></h4>
-												<p>This is an animation made with MS Office PowerPoint and <a href="https://ama.nycu.edu.tw/3.0/" target="_blank">AMA</a>.</p>
-											</div>
-										</article>
-									</div>
-								
-							</div>
-						</section>
-
-						<!-- Contact -->
-						<section id="Contact">
-							<div class="container">
-								<h2>Contact</h2>
-								<p><a href="mailto:imrui.ee09@nycu.edu.tw" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span> &nbsp;&nbsp;imrui.ee09@nycu.edu.tw</a></p>
-							</div>
-						</section>
-
-						<!-- Two -->
-							<!-- <section id="two">
-								<div class="container">
-									<h3>Skills</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
-								</div>
-							</section> -->
-
-						<!-- Three -->
-							<!-- <section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section> -->
-
-						<!-- Four -->
-							<!-- <section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section> -->
-
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; RÜI. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>

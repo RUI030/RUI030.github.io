@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('style.css');
+
+/*CSS Document*/
+/*:link :visited :hover :active*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+#photos h1 {
+    margin: 5vh auto;
+}
+
+/* phone */
+.gallery-wrapper, .design-wrapper {
+    width: 90%;
+    margin: auto;
+}
+/* design */
+.design-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* photos */
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 100%;
+    min-width: 100%;
+    padding: 0 6px;
+}
+
+.gallery-col img {
+    margin-top: 12px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+
+    .gallery-wrapper, .design-wrapper {
+        width: 80%;
+    }
+    /* photo */
+    .gallery-col {
+        flex: 50%;
+        min-width: 50%;
+    }
+}
+
+/*for desktops*/
+@media only screen and (min-width: 1200px) {
+
+    /* photo */
+    .gallery-col {
+        flex: 25%;
+        min-width: 25%;
+    }
+}

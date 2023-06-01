@@ -1,0 +1,528 @@
+@charset "utf-8";
+/*CSS Document*/
+/*:link :visited :hover :active*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* font */
+    transition: 0.4s ease-out;
+    text-decoration: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    font-size: x-large;
+    font-family: 'Saira Semi Condensed', Garamond, Georgia, sans-serif;
+    color: rgba(180, 160, 115, 1);
+    background: rgba(20, 50, 75, 1);
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgba(180, 160, 115, 1);
+    text-align: center;
+    font-family: 'Philosopher';
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p,
+a {
+    color: rgba(200, 200, 200, 1);
+    font-size: 14px;
+}
+
+/* link in p */
+p a {
+    text-decoration: underline dotted rgba(200, 200, 200, .6) 1.5px;
+}
+
+p a:hover {
+    color: rgba(210, 195, 150, 1);
+    text-decoration-color: rgba(210, 195, 150, .7);
+}
+
+/* share */
+ul {
+    list-style-type: none;
+}
+
+.rel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+}
+
+.full {
+    height: 100vh;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex */
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rwd-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* svg */
+#sun img,
+#moon img {
+
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
+/* nav */
+nav {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0px;
+    background-color: rgba(27, 27, 27, 1);
+    color: rgba(200, 200, 200, 1);
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+nav .rel {
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav article {
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p {
+    width: 70px;
+    font-family: 'Urbanist';
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+nav span,
+nav img {
+    vertical-align: middle;
+    margin: auto;
+}
+
+.close-nav-btn {
+    font-size: 36px;
+    color: rgba(200, 200, 200, 1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.close-nav-btn:hover {
+    cursor: pointer;
+}
+
+/* aside */
+aside {
+    z-index: 1000;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+aside ul li {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(180, 160, 115, 1);
+    text-align: center;
+}
+
+aside ul li:hover {
+    background-color: rgba(200, 200, 200, 1);
+    cursor: pointer;
+}
+
+aside ul li span {
+    margin: auto;
+    background-color: transparent;
+    color: rgba(20, 50, 75, 1);
+}
+
+/* main */
+header,
+section,
+footer {
+    width: 100%;
+    position: relative;
+}
+
+section {
+    margin:8vh auto;
+}
+
+section section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section h1 {
+    margin: 5vh;
+}
+
+
+.avatar {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+/* ============phone============== */
+/* header */
+
+header #top-container {
+    width: 100%;
+}
+
+header h2 {
+    margin: 5vh auto 3vh auto;
+    font-size: 8vw;
+    letter-spacing: .3em;
+    font-family: 'Urbanist', sans-serif;
+    padding-left: .25em;
+    /* 文字暴力置中(氣死我了搞超久 */
+}
+
+header p {
+    width: 70%;
+    margin: auto;
+    font-size: 3vw;
+    line-height: 1.6em;
+    font-family: 'Saira';
+    letter-spacing: .1em;
+}
+
+header #down-arrow {
+    position: absolute;
+    bottom: 3vh;
+    margin: 0 auto;
+}
+
+header #down-arrow span {
+    background-color: transparent;
+    color: rgba(200, 200, 200, 1);
+}
+
+/* pages */
+#pages .rwd-flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#pages .box {
+    flex: 1;
+}
+
+#pages .box .container {
+    height: 50vh;
+}
+
+#pages .box article img {
+    width: 20vh;
+    height: auto;
+    padding: 1vh 0;
+    margin: auto;
+}
+
+#moon h2 {
+    color: rgba(180, 180, 180, 1);
+}
+
+/* link */
+.urlicon {
+    width: 50%;
+    margin: auto;
+}
+
+.urlicon article {
+    width: 100px;
+    margin: 10px;
+    display: inline-block;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+}
+
+.urlicon i {
+    font-size: 60px;
+    line-height: 1.2em;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.urlicon p {
+    margin: 10px auto;
+    font-family: 'Urbanist';
+    font-size: 20px;
+    color: rgba(200, 200, 200, 1);
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+/* footer */
+footer h2 {
+    padding: 10%;
+}
+
+/*for tablets*/
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    p,
+    a {
+        color: rgba(200, 200, 200, 1);
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+
+    .rwd-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* header */
+    .avatar {
+        width: 25vw;
+    }
+
+    header h2 {
+        font-size: 6vh;
+    }
+
+    header p {
+        font-size: 3vh;
+        width: 60%;
+    }
+
+    /* pages */
+    #pages .rwd-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #pages .box .container {
+        height: 100vh;
+    }
+
+    #pages .box article img {
+        width: 16vw;
+        height: auto;
+        padding: 3vh 0;
+        margin: auto;
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+    }
+
+    #pages .box article h2 {
+        font-size: 5vh;
+    }
+
+    /* link */
+    .urlicon {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*for desktops*/
+@media only screen and (min-width: 1200px) {
+    header #top-container {
+        width: 40%;
+    }
+
+    /* nav */
+    nav article {
+        transition: 0.1s ease-out;
+    }
+
+    nav article:hover {
+        cursor: pointer;
+        color: rgba(210, 195, 150, 1);
+    }
+
+    nav article:hover p {
+        cursor: pointer;
+        color: rgba(210, 195, 150, 1);
+    }
+
+    /* header */
+    .avatar {
+        width: 25vh;
+    }
+
+    header:hover {
+        cursor: pointer;
+    }
+
+    /* pages */
+    #pages .box:hover article {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    #pages .box:hover #sun h2 {
+        color: rgba(210, 195, 150, 1);
+    }
+
+    #pages .box:hover #moon h2 {
+        color: rgba(200, 200, 200, 1);
+    }
+
+    /* link */
+    .urlicon article {
+        width: 10vw;
+        margin: 3vw;
+        display: inline-block;
+        transition: transform .3s ease-in-out;
+        -webkit-transition: transform .3s ease-in-out;
+    }
+
+    .urlicon article:hover {
+        color: rgba(180, 160, 115, 1);
+        transform: scale(1.2);
+    }
+
+    .urlicon i {
+        font-size: 80px;
+        line-height: 1.2em;
+        vertical-align: middle;
+        margin: auto;
+    }
+
+    .urlicon p {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
+
+    .urlicon article:hover p {
+        color: rgba(180, 160, 115, 1);
+    }
+}

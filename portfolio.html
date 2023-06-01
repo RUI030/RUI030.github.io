@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUI's Website</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Saira+Semi+Condensed:wght@100;200;300;400;500&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style -->
+    <!-- fancybox.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <!-- js -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- fancybox.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+</head>
+
+<body>
+    <!-- 選單 -->
+    <nav>
+        <div class="rel center">
+            <article class="go-home">
+                <span class="material-symbols-outlined">home</span>
+                <p>Home</p>
+            </article>
+            <article class="to-pages">
+                <span class="material-symbols-outlined">explore</span>
+                <p>Pages</p>
+            </article>
+            <article class="go-projects sun">
+                <img src="img/top/sun.svg" />
+                <p>Projects</p>
+            </article>
+            <article class="go-portfolio moon">
+                <img src="img/top/moon2.svg" />
+                <p>Portfolio</p>
+            </article>
+            <!-- <article class="to-design">
+                <span class="material-symbols-outlined">draw_abstract</span>
+                <p>Design</p>
+            </article> -->
+            <article class="to-photos">
+                <span class="material-symbols-outlined">photo_library</span>
+                <p>Photos</p>
+            </article>
+            <article class="to-links">
+                <span class="material-symbols-outlined">link</span>
+                <p>Links</p>
+            </article>
+        </div>
+        <span class="material-symbols-outlined close-nav close-nav-btn">
+            close
+        </span>
+    </nav>
+    <!-- 右下功能 -->
+    <aside>
+        <ul>
+            <!-- <li class="prev-sec">
+                <span class="material-symbols-outlined">
+                    expand_less
+                </span>
+            </li>
+            <li class="next-sec">
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </li> -->
+            <li class="to-top">
+                <span class="material-symbols-outlined">
+                    vertical_align_top
+                </span>
+            </li>
+            <!-- <li class="to-design">
+                <span class="material-symbols-outlined">draw_abstract</span>
+            </li> -->
+            <li class="to-photos">
+                <span class="material-symbols-outlined">photo_library</span>
+            </li>
+            <li class="to-pages">
+                <span class="material-symbols-outlined">
+                    explore
+                </span>
+            </li>
+            <li class="to-links">
+                <span class="material-symbols-outlined">
+                    link
+                </span>
+            </li>
+            <li class="open-nav" id="main-btn">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </li>
+        </ul>
+    </aside>
+    <!-- 主要頁面內容 -->
+    <main>
+        <!-- 頁首 -->
+        <header id="top" class="to-next">
+            <div class="full">
+                <div id="top-container">
+                    <div class="col">
+                        <img class="avatar" src="img/top/moon.svg" alt="avatar" />
+                        <h2>Portfolio</h2>
+                        <p>PikaPika</p>
+                    </div>
+                </div>
+                <!-- <div id="down-arrow">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div> -->
+            </div>
+        </header>
+        <!-- Design -->
+        <!-- <section id="design">
+            <h1>Design</h1>
+            <div class="design-wrapper">
+                <div class="design-row">
+
+                </div>
+            </div>
+        </section> -->
+        <!-- Photos -->
+        <section id="photos">
+            <h1>Photos</h1>
+            <div class="gallery-wrapper">
+                <div class="gallery-row">
+                    <div class="gallery-col">
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (3).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (3).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (1).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (1).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (2).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (2).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (3).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (3).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (4).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (4).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (5).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (5).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (6).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (6).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c1 (7).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c1 (7).jpg" />
+                        </a>
+                    </div>
+                    <div class="gallery-col">
+                        <a class="fancybox"  href="img/portfolio/photos/c2 (1).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c2 (1).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c2 (2).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c2 (2).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c2 (3).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c2 (3).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c2 (4).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c2 (4).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c2 (5).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c2 (5).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c2 (6).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c2 (6).jpg" />
+                        </a>
+                    </div>
+                    <div class="gallery-col">
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (5).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (5).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (4).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (4).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (2).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (2).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (1).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (1).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (7).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (7).jpg" />
+                        </a>
+                    </div>
+                    <div class="gallery-col">
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (2).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (2).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c3 (6).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c3 (6).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (3).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (3).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (4).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (4).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (1).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (1).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (5).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (5).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (6).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (6).jpg" />
+                        </a>
+                        <a class="fancybox"  href="img/portfolio/photos/c4 (7).jpg" data-fancybox="photos-gallery">
+                            <img src="img/portfolio/photos/c4 (7).jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 日月傳送門 -->
+        <section id="pages">
+            <div class="full">
+                <div class="rwd-flex">
+                    <div class="box">
+                        <div class="container">
+                            <article class="go-projects sun">
+                                <img src="img/top/sun.svg" /><br />
+                                <h2>Projects</h2>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="container">
+                            <article id="moon" class="go-portfolio moon">
+                                <img src="img/top/moon.svg" /><br />
+                                <h2>Portfolio</h2>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 外部連結 -->
+        <section id="links">
+            <div class="full">
+                <section class="urlicon">
+                    <h1>
+                        Link
+                    </h1>
+                    <a href="" target="_blank">
+                        <article>
+                            <i class="material-icons">contact_page</i>
+                            <p>Resume</p>
+                        </article>
+                    </a>
+                    <a href="mailto:imrui.ee09@nycu.edu.tw" target="_blank">
+                        <article>
+                            <i class="material-icons">mail_outline</i>
+                            <p>Email</p>
+                        </article>
+                    </a>
+                    <a href="https://github.com/RUI030/" target="_blank">
+                        <article>
+                            <i class="fa fa-solid fa-github"></i>
+                            <p>Github</p>
+                        </article>
+                    </a>
+                </section>
+            </div>
+        </section>
+        <!-- 頁尾 -->
+        <footer>
+            <div class="full">
+                <h2>061 &copy; ALL Right Reserved.</h2>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
