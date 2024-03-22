@@ -85,6 +85,10 @@ p a:hover {
     text-decoration-color: rgba(210, 195, 150, .7);
 }
 
+.pt-30 {
+    padding-top: 30px;
+}
+
 /* share */
 ul {
     list-style-type: none;

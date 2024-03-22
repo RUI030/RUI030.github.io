@@ -52,15 +52,18 @@ function openNav() {
     $(".close-nav-btn").css({ 
         'display': 'block',
         'opacity': '1'
-    })
+    });
+    $("nav div").css({
+        'opacity': '1',
+    });
     var a_w = document.body.clientWidth;
     if (a_w >= 768) {
         // Tablet&PC
         $("nav").css({
-            'width': '34%'
+            'width': '25%',
         });
         $("main").css({
-            'width': '66%',
+            'width': '75%',
         });
     } else {
         //phone
@@ -74,7 +77,10 @@ function closeNav() {
     $(".close-nav-btn").css({ 
         'display': 'none',
         'opacity': '0'
-    })
+    });
+    $("nav div").css({
+        'opacity': '0',
+    });
     var a_w = document.body.clientWidth;
     if (a_w >= 768) {
         // Tablet&PC
