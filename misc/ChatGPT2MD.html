@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform to Markdown</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .textarea-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+        .file-input-group {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .file-input-group input[type="text"] {
+            flex: 2;
+            margin-right: 10px;
+        }
+        .file-input-group select {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .file-input-group button {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .file-input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .file-input-group input[type="text"], 
+            .file-input-group select, 
+            .file-input-group button {
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Block -->
+            <div class="col-md-6 mb-3">
+                <!-- <div class="d-flex justify-content-between align-items-center mb-2"> -->
+                <div class="d-flex justify-content-start align-items-center mb-2">
+                    <h1 class="text-success">ChatGPT</h1>
+                    <button class="btn btn-light copy-button" onclick="copyToClipboard('inputText')"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="textarea-container">
+                    <textarea id="inputText" rows="22" class="form-control" placeholder="Enter your text here..."></textarea>
+                </div>
+                <button class="btn btn-success w-100" onclick="transformAndShow()">Transform</button>
+            </div>
+            <!-- Right Block -->
+            <div class="col-md-6 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                    <h1 class="text-primary">Markdown</h1>
+                    <button class="btn btn-light copy-button" onclick="copyToClipboard('outputText')"><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <div class="textarea-container">
+                    <textarea id="outputText" rows="22" class="form-control" placeholder="Transformed markdown will appear here..." readonly></textarea>
+                </div>
+                <div class="file-input-group">
+                    <input type="text" id="fileName" class="form-control" placeholder="Filename" />
+                    <select id="fileExtension" class="form-control">
+                        <option value=".md">.md</option>
+                        <option value=".txt">.txt</option>
+                    </select>
+                    <button class="btn btn-primary" onclick="downloadMarkdown()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function transformToMarkdown(input) {
+            const markdownText = input
+                .replace(/```\n([^`]*)\n```/g, '```\n$1\n```') // Preserve code blocks
+                .replace(/\*\*(.*?)\*\*/g, '**$1**') // Bold
+                .replace(/\[(.*?)\]\((.*?)\)/g, '[$1]($2)') // Links
+                .replace(/\n\n/g, '\n\n') // Double newlines
+                .replace(/\n/g, '  \n') // Single newline for line break in Markdown
+                .replace(/\\\((.*?)\\\)/g, '$$$1$$ ') // Inline LaTeX
+                .replace(/\\\[(.*?)\\\]/g, '\n$$$$\n$1\n$$$$&nbsp;') // Block LaTeX
+                .replace(/\$\$\n(.*?)\n\$\$/gs, '\n$$$$\n$1\n$$$$ ') // Preserve multiline equations
+                .replace(/\\\[  \n(.*?)  \n\\\]/gs, '\n$$$$\n$1\n$$$$ ') // Convert \[ \] to $$ $$
+                .replace(/(\$\s+)/g, '$') // Remove spaces after opening $
+                .replace(/(\s+\$)/g, '$'); // Remove spaces before closing $
+
+            return markdownText;
+        }
+
+        function transformAndShow() {
+            const inputText = document.getElementById('inputText').value;
+            const markdownText = transformToMarkdown(inputText);
+            document.getElementById('outputText').value = markdownText;
+        }
+
+        function copyToClipboard(elementId) {
+            const textArea = document.getElementById(elementId);
+            textArea.select();
+            document.execCommand('copy');
+        }
+
+        function downloadMarkdown() {
+            const markdownText = document.getElementById('outputText').value;
+            const fileNameInput = document.getElementById('fileName').value.trim();
+            const fileExtension = document.getElementById('fileExtension').value;
+            const fileName = fileNameInput || 'ChatGPT_Answer';
+            const blob = new Blob([markdownText], { type: 'text/markdown' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${fileName}${fileExtension}`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
