@@ -33,6 +33,13 @@ body {
     -ms-overflow-style: none;
 }
 
+footer .full {
+    display: block; /* 強制不是 flex */
+}
+footer .full h2 {
+    padding-bottom: 0;
+}
+
 h1,
 h2,
 h3,
