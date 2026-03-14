@@ -15,7 +15,7 @@ $(document).ready(
         $('.go-projects').on('click', function () { go('projects.html') });
         $('.go-portfolio').on('click', function () { go('portfolio.html') });
         // icon links
-        $('.go-resume').on('click', function () { goTo('https://drive.google.com/file/d/1M0jTyTpKl-oYlQz1GXb2cshQBrmEiCHX/view?usp=drive_link');});
+        $('.go-resume').on('click', function () { goTo('https://drive.google.com/drive/u/1/folders/1gYylMsKwdQxlb2c3XElvePXauSSGBe1-');});
         $('.go-mail').on('click', function () { goTo('mailto:imrui@umich.edu');});
         $('.go-linkedin').on('click', function () { goTo('https://www.linkedin.com/in/linruiyu/');});
         $('.go-github').on('click', function () { goTo('https://github.com/RUI030/');});
